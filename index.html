@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            height: 90vh;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .changeGame {
+            padding: 100px;
+            background-color: rgb(255, 0, 0);
+        }
+        input {
+            width: 420px;
+            height: 50px;
+            border: 2px solid rgb(248, 98, 123);
+            border-radius: 30px;
+        }
+        .all {
+            display: flex;
+            gap: 5px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            width: 100px;
+            height: 50px;
+            border: dashed yellow 3px;
+            color: yellow;
+            background-color: purple;
+        }
+        button:active {
+            transform: scale(.9);
+        }
+        #count {
+            background-color: pink;
+            width: 120px;
+            height: 45px;
+            text-align: center;
+            padding-top: 10px;
+        }
+        #two{
+          display: flex;
+        }
+    </style>
+    <div class="changeGame">
+        <input type="number" id="time" value="5" min="1" max="15">
+        <div class="all">
+            <h1 id="count">0</h1>
+            <div class="buttons">
+                <button id="start">Start Game</button>
+                <button id="restart">Restart</button>
+            </div>
+        </div>
+     <div id="two"> <span>clicks:</span>  <h1 id="count-per-second">0</h1></div>
+        <h2>Record: <span id="record">0</span></h2>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
